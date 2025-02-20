@@ -2,6 +2,12 @@ html {
 	container-type: inline-size;
 }
 
+@mixin mobile {
+	@container (max-width: 767px) {
+		@content;
+	}
+}
+
 @mixin tablet {
 	@container (min-width: 768px) {
 		@content;

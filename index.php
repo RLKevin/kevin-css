@@ -6,9 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin CSS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catppuccin.css">
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
+    <header class="bg-alt">
+        <div class="wrapper">
+            <div class="logo-container">
+                <a href="#">Kevin css</a>
+            </div>
+            <div class="filler"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="button-container">
+                <a class="button" href="#">Contact</a>
+            </div>
+            <button type="menu" class="button">menu</button>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="text-container">
+                <h2>Headers</h2>
+                <p>A header is an HTML element that represents introductory content, typically containing navigational links or introductory information about the section it precedes. It is defined using the <key>header</key> tag in HTML.</p>
+                <code>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum deserunt dicta possimus vitae, inventore aut omnis veniam adipisci modi totam.
+                </code>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="wrapper">
             <div class="text-container">
@@ -40,7 +81,7 @@
                 <?php for ($i=0; $i < 12; $i++) { ?>
                     <div href="#" class="card bg-alt shape">
                         <div class="image-container">
-                            <img src="https://unsplash.it/640" alt="">
+                            <img loading="lazy" src="https://unsplash.it/seed/<?= $i+1; ?>/1920/1440" alt="">
                         </div>
                         <div class="text-container">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -55,6 +96,31 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-alt">
+        <div class="wrapper">
+            <div class="logo-container">
+                <a href="#">Goodbeye</a>
+            </div>
+            <div class="filler"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
     
 </body>
 

@@ -1,9 +1,13 @@
+@import 'colors';
+
 @import 'spacing';
 @import 'shape';
+@import 'animations';
 
 @import 'accessibility';
 @import 'buttons';
-@import 'colors';
 @import 'containers';
 @import 'reset';
 @import 'text';
+
+@import 'components/card';

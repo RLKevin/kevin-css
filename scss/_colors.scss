@@ -1,36 +1,38 @@
 :root {
-	--color-primary: #007bff;
-	--color-primary-text: #fff;
-	--color-secondary: #6c757d;
-	--color-secondary-text: #fff;
-	--color-success: #28a745;
-	--color-success-text: #fff;
-	--color-info: #17a2b8;
-	--color-info-text: #fff;
-	--color-warning: #ffc107;
-	--color-warning-text: #fff;
-	--color-danger: #dc3545;
-	--color-danger-text: #fff;
-
 	--color-light: #f8f9fa;
 	--color-dark: #343a40;
 	--color-white: #fff;
 	--color-black: #000;
 
-	--bg: var(--color-light);
-	--fg: var(--color-black);
+	--color-primary: #007bff;
+	--color-primary-text: var(--color-dark);
+	--color-secondary: #6c757d;
+	--color-secondary-text: var(--color-dark);
+	--color-green: green;
+	--color-green-text: var(--color-dark);
+	--color-blue: blue;
+	--color-blue-text: var(--color-dark);
+	--color-yellow: yellow;
+	--color-yellow-text: var(--color-dark);
+	--color-orange: orange;
+	--color-orange-text: var(--color-dark);
+	--color-danger: red;
+	--color-danger-text: var(--color-dark);
+
+	--bg: var(--color-white);
+	--fg: var(--color-dark);
 	--accent: var(--color-primary);
 
-	--bg-alt: var(--color-white);
-	--fg-alt: var(--color-dark);
+	--bg-alt: var(--color-light);
+	--fg-alt: var(--color-black);
 	--accent-alt: var(--color-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: var(--color-dark);
+		--bg: var(--color-black);
 		--fg: var(--color-white);
-		--bg-alt: var(--color-black);
+		--bg-alt: var(--color-dark);
 		--fg-alt: var(--color-light);
 	}
 }
