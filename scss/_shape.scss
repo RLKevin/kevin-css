@@ -1,0 +1,7 @@
+@mixin shape {
+	border-radius: 0.5em;
+}
+
+.shape {
+	@include shape;
+}

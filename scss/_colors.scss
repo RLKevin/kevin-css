@@ -1,0 +1,49 @@
+:root {
+	--color-primary: #007bff;
+	--color-primary-text: #fff;
+	--color-secondary: #6c757d;
+	--color-secondary-text: #fff;
+	--color-success: #28a745;
+	--color-success-text: #fff;
+	--color-info: #17a2b8;
+	--color-info-text: #fff;
+	--color-warning: #ffc107;
+	--color-warning-text: #fff;
+	--color-danger: #dc3545;
+	--color-danger-text: #fff;
+
+	--color-light: #f8f9fa;
+	--color-dark: #343a40;
+	--color-white: #fff;
+	--color-black: #000;
+
+	--bg: var(--color-light);
+	--fg: var(--color-black);
+	--accent: var(--color-primary);
+
+	--bg-alt: var(--color-white);
+	--fg-alt: var(--color-dark);
+	--accent-alt: var(--color-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--color-dark);
+		--fg: var(--color-white);
+		--bg-alt: var(--color-black);
+		--fg-alt: var(--color-light);
+	}
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--fg);
+
+	a {
+		color: var(--accent);
+	}
+}
+
+.bg-alt {
+	background-color: var(--bg-alt);
+}

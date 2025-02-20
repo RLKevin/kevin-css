@@ -1,0 +1,50 @@
+html {
+	container-type: inline-size;
+}
+
+@mixin tablet {
+	@container (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@container (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin padding-inline {
+	padding-inline-start: 1em;
+	padding-inline-end: 1em;
+
+	@include tablet {
+		padding-inline-start: 2em;
+		padding-inline-end: 2em;
+	}
+
+	@include desktop {
+		padding-inline-start: 3em;
+		padding-inline-end: 3em;
+	}
+}
+
+@mixin padding-block {
+	padding-block-start: 1em;
+	padding-block-end: 1em;
+
+	@include tablet {
+		padding-block-start: 2em;
+		padding-block-end: 2em;
+	}
+
+	@include desktop {
+		padding-block-start: 3em;
+		padding-block-end: 3em;
+	}
+}
+
+@mixin padding {
+	@include padding-inline;
+	@include padding-block;
+}
