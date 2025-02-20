@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin CSS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/catppuccin.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/catppuccin.min.css">
     <script src="js/app.js" defer></script>
 </head>
 
