@@ -1,11 +1,18 @@
 .card {
 	container-type: inline-size;
+	@include border;
+	@include shape;
+	@include shadow;
 
 	transition: all 0.3s ease;
+
+	.image-container {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 
 	.text-container {
 		@include padding;
 	}
 
-	@include shadow;
 }

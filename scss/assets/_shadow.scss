@@ -1,3 +1,7 @@
 @mixin shadow {
-	box-shadow: 0px 0px 0.5rem 0 var(--bg, #00000020), 0 0 0.5rem #00000080;
+	// box-shadow: 0 0 1rem 0 var(--bg, #00000020), 0 0 0.5rem 0 #00000060;
+}
+
+@mixin border {
+	border: var(--border) solid currentColor;
 }

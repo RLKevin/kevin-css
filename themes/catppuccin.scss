@@ -28,11 +28,9 @@
 	--accent-alt: var(--color-secondary);
 }
 
-// @media (prefers-color-scheme: dark) {
-// 	:root {
-// 		--bg: var(--color-dark);
-// 		--fg: var(--color-white);
-// 		--bg-alt: var(--color-black);
-// 		--fg-alt: var(--color-light);
-// 	}
-// }
+[data-theme='dark'] {
+	--bg: var(--color-dark);
+	--fg: var(--color-white);
+	--bg-alt: var(--color-black);
+	--fg-alt: var(--color-light);
+}

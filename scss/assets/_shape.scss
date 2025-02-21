@@ -1,5 +1,5 @@
 @mixin shape {
-	border-radius: 0.5em;
+	border-radius: var(--br);
 }
 
 .shape {

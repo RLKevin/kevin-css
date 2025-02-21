@@ -87,8 +87,8 @@ section {
 }
 
 .image-container {
-	@include shape;
-	overflow: hidden;
+	// @include shape;
+	// overflow: hidden;
 	aspect-ratio: 4/3;
 
 	img {
@@ -112,13 +112,29 @@ section {
 }
 
 .button-container {
-	display: flex;
+	display: flex !important;
 	gap: 1rem;
+
+	&.center {
+		justify-content: center;
+	}
+
+	&.end {
+		justify-content: flex-end;
+	}
+
+	&.stretch {
+		justify-content: stretch;
+
+		> * {
+			flex-grow: 1;
+		}
+	}
 }
 
 .card-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
 	gap: 1rem;
 	transition: all 0.3s ease;
 }
