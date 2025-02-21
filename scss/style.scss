@@ -1,13 +1,14 @@
-@import 'colors';
+@import 'assets/colors';
 
-@import 'spacing';
-@import 'shape';
-@import 'animations';
+@import 'assets/shadow';
+@import 'assets/shape';
+@import 'assets/spacing';
+@import 'assets/animations';
 
-@import 'accessibility';
-@import 'buttons';
-@import 'containers';
-@import 'reset';
-@import 'text';
+@import 'assets/accessibility';
+@import 'assets/buttons';
+@import 'assets/containers';
+@import 'assets/reset';
+@import 'assets/text';
 
 @import 'components/card';

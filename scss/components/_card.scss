@@ -6,4 +6,6 @@
 	.text-container {
 		@include padding;
 	}
+
+	@include shadow;
 }

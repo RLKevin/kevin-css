@@ -45,12 +45,19 @@ body a {
   background-color: var(--bg-alt);
 }
 
-html {
-  container-type: inline-size;
+.bg-primary {
+  --bg: var(--color-primary);
+  --fg: var(--color-primary-text);
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 .shape {
   border-radius: 0.5em;
+}
+
+html {
+  container-type: inline-size;
 }
 
 .button {
@@ -301,6 +308,10 @@ html {
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.8;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 h1,
@@ -347,7 +358,7 @@ p {
   display: block;
 }
 
-key {
+kbd {
   font-family: monospace;
   font-size: 0.8rem;
   padding: 0.1rem 0.25rem;
@@ -359,12 +370,11 @@ key {
 
 code {
   font-family: monospace;
-  font-size: 0.8rem;
-  padding: 0.1rem 0.25rem;
+  padding: 2rem 1rem;
   line-height: 1.6;
-  background-color: var(--bg-alt);
-  border: 1px solid var(--accent-alt);
-  color: var(--accent-alt);
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-black);
+  color: var(--color-light);
   border-radius: 0.25rem;
 }
 
@@ -372,6 +382,8 @@ code {
   container-type: inline-size;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 0px 0.5rem 0 var(--bg, rgba(0, 0, 0, 0.1254901961)), 0 0 0.5rem rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0px 0px 0.5rem 0 var(--bg, rgba(0, 0, 0, 0.1254901961)), 0 0 0.5rem rgba(0, 0, 0, 0.5019607843);
 }
 .card .text-container {
   -webkit-padding-start: 1em;

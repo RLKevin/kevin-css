@@ -43,7 +43,7 @@
         <div class="wrapper">
             <div class="text-container">
                 <h2>Headers</h2>
-                <p>A header is an HTML element that represents introductory content, typically containing navigational links or introductory information about the section it precedes. It is defined using the <key>header</key> tag in HTML.</p>
+                <p>A header is an HTML element that represents introductory content, typically containing navigational links or introductory information about the section it precedes. It is defined using the <kbd>header</kbd> tag in HTML.</p>
                 <code>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum deserunt dicta possimus vitae, inventore aut omnis veniam adipisci modi totam.
                 </code>

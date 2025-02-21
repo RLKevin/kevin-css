@@ -49,3 +49,11 @@ body {
 .bg-alt {
 	background-color: var(--bg-alt);
 }
+
+.bg-primary {
+	--bg: var(--color-primary);
+	--fg: var(--color-primary-text);
+
+	background-color: var(--bg);
+	color: var(--fg);
+}
